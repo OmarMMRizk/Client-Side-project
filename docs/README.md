@@ -14,3 +14,5 @@ The primary objective of this project is to create a **comprehensive** and **use
 ---
 
 This project aims to empower users with the tools needed to analyze and interpret data with ease, offering a robust foundation for decision-making and innovation.
+
+#Manibulate By Content Adminstrator AbdoHasen
