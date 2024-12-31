@@ -1,11 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
-    margin:0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Nunito", serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --emeraldGreen: rgb(22,71,52);
+    --errorRed:  #ED4337; 
+}
+body{
+    background-color: var(--emeraldGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div.container{
+    background-color: #FFF;
+    height: 85vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+form{
+    width: 50%;
+}
+label{
+    font-weight: 800;
+    margin: 1rem 0 0.2rem;
+    color: var(--emeraldGreen);
+    font-size: 1.1rem;
 }
 
-body{
-    height: 100vh;
-    /* width: 1 */
-    
+input, label{
+    display: block;
+}
+input[type = 'email'], 
+input[type = 'password'],
+input[type='submit']{
+    width: 100%;
+}
+input[type = 'email']:focus, 
+input[type = 'password']:focus{
+    outline-color: var(--emeraldGreen);
+}
+input[type='submit']{
+    background-color: var(--emeraldGreen);
+    color: #FFF;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.2rem 0;
+    margin-top: 0.5rem;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    div.container{
+        flex-direction: column-reverse;
+        min-height: fit-content;
+    }
+    form{
+        width: 90%;
+    }
+    div#palm{
+        width: 90%;
+        height: 40%;
+    }
 }
